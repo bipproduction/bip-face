@@ -7,7 +7,6 @@
     <meta name="viewport" content="width=device-width" id="viewport">
     <meta name="keywords" content="Face">
     <style>
-
         body {
             font-family: 'Lato', 'Segoe UI';
             font-size: 16px;
@@ -19,11 +18,20 @@
             width: 100vw;
             height: 100vh;
         }
+        .can {
+            padding: 16px;
+            width: 100%;
+            height: 100vh;
+            position: static;
+        }
     </style>
 </head>
 
 <body>
-    <canvas id="canvas" style="margin: 0 auto; width: 100%"></canvas>
+    <div class="can">
+        <canvas id="canvas" style="margin: 0 auto; width: 70%">
+        </canvas>
+    </div>
     <pre id="log" style="padding: 8px; position: fixed; bottom: 0"></pre>
 </body>
 
