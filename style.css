@@ -1,0 +1,6 @@
+@font-face { font-family: 'Lato'; font-display: swap; font-style: normal; font-weight: 100; src: local('Lato'), url('../../assets/lato-light.woff2') }
+      html { font-family: 'Lato', 'Segoe UI'; font-size: 16px; font-variant: small-caps; }
+      body { margin: 0; padding: 16px; background: black; color: white; overflow-x: hidden; width: 100vw; height: 100vh; }
+      body::-webkit-scrollbar { display: none; }
+      .button { padding: 2px; cursor: pointer; box-shadow: 2px 2px black; width: 64px; text-align: center; place-content: center; margin-left: 16px; height: 16px; display: none }
+      .ok { position: absolute; top: 64px; right: 20px; width: 150px; background-color: grey; padding: 4px; color: black; font-size: 14px }
