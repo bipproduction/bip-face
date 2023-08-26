@@ -18,7 +18,7 @@ import * as H from '@vladmandic/human'; // equivalent of import @vladmandic/Huma
         const interpolated = human.next(); // get smoothened result using last-known results which are continously updated based on input webcam video
         human.draw.canvas(human.webcam.element, canvas); // draw webcam video to screen canvas // better than using procesed image as this loop happens faster than processing loop
         await human.draw.all(canvas, interpolated); // draw labels, boxes, lines, etc.
-        setTimeout(drawLoop, 10); // use to slow down refresh from max refresh rate to target of 1000/30 ~ 30 fps
+        setTimeout(drawLoop, 200); // use to slow down refresh from max refresh rate to target of 1000/30 ~ 30 fps
       }
 
       async function main() { // main entry point
