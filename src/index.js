@@ -2,7 +2,7 @@ console.log("Hello World!");
 import * as H from '@vladmandic/human'; // equivalent of import @vladmandic/Human
 
       const humanConfig = { // user configuration for human, used to fine-tune behavior
-        modelBasePath: '../models', // models can be loaded directly from cdn as well
+        modelBasePath: './models', // models can be loaded directly from cdn as well
         filter: { enabled: true, equalization: true, flip: false },
         face: { enabled: true, detector: { rotation: false }, mesh: { enabled: true }, attention: { enabled: false }, iris: { enabled: true }, description: { enabled: true }, emotion: { enabled: true } },
         body: { enabled: true },
