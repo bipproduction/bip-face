@@ -20,7 +20,9 @@ const config = {
         new HtmlWebpackPlugin({
             template: 'index.html',
         }),
-        new GenerateSW(),
+        new GenerateSW({
+            maximumFileSizeToCacheInBytes: 3 * 1024 * 1024, 
+        }),
     ],
     module: {
         rules: [
@@ -34,7 +36,7 @@ const config = {
         ],
     },
     devServer: {
-        contentBase: path.join(__dirname, 'dist'), // Replace with your output directory
+        static: path.join(__dirname, 'dist'), // Replace with your output directory
         port: 3001, // Set the port to 3001
     },
 };
