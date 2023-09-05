@@ -1,6 +1,6 @@
 {
-  "name": "BIP Face AI",
-  "short_name": "BIP FACE AI",
+  "name": "Face AI",
+  "short_name": "FACE AI",
   "description": "Face Recognition Ai",
   "start_url": "./index.html",
   "scope": "/",
